@@ -14,7 +14,7 @@ float calcalc(float a, char op, float b){
 }
 
 int main() {
-    float a = 1.6, b = 0.4, result;
+    float a = 3.4, b = 2.5, result;
     char operation = '-';
 
     if ('+' == operation){
