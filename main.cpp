@@ -29,5 +29,6 @@ int main() {
     else if ('/' == operation){
         std::cout << calculator3(a, operation, b) << '\n';
     }
+    std::cout << "some changes" << '\n';
     return 0;
 }
