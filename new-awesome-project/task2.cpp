@@ -1,24 +1,24 @@
 #include <iostream>
 
-float calculator(float a, char op, float b) {
-    switch (op) {
-        case '-':
-            return a - b;
-            break;
+float poo(float a, char b, float c){
+    switch (b) {
         case '+':
-            return a + b;
+            return a+c;
+            break;
+        case '-':
+            return a-c;
             break;
         case '*':
-            return a * b;
+            return a*c;
             break;
         case '/':
-            return a / b;
+            return a/c;
             break;
     }
 }
 int main() {
-    float a = 3.4, b = 2.5, result;
-    char operation = '+';
-    std::cout << calculator(a, operation, b) << '\n';
+    float a=0.1, c=0.5;
+    char b= '+';
+    std::cout « poo(a, b, c) « '\n';
     return 0;
 }

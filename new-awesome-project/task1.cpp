@@ -1,34 +1,31 @@
 #include <iostream>
 
-float calc(float a, char op, float b) {
-    return a+b;
+float q(float a, char b, float c) {
+    return a+c;
 }
-float calca(float a, char op, float b){
-    return a-b;
+float w(float a, char b, float c) {
+    return a-c;
 }
-float calcal(float a, char op, float b){
-    return a*b;
+float e(float a, char b, float c) {
+    return a*c;
 }
-float calcalc(float a, char op, float b){
-    return a/b;
+float r(float a, char b, float c) {
+    return a/c;
 }
-
 int main() {
-    float a = 3.4, b = 2.5, result;
-    char operation = '-';
-
-    if ('+' == operation){
-        std::cout << calc(a,operation, b) << '\n';
+    float a=0.4, c=0.6, result;
+    char b='+';
+    if ('+' ==b){
+        std::cout « q(a, b, c) « '\n';
     }
-    else if ('-' == operation){
-        std::cout << calca(a,operation, b) << '\n';
+    else if ('-' ==b) {
+        std::cout « w(a, b, c) « '\n';
     }
-    else if ('*' == operation){
-        std::cout << calcal(a,operation, b) << '\n';
+    else if ('*' ==b) {
+        std::cout « e(a, b, c) « '\n';
     }
-    else if ('/' == operation){
-        std::cout << calcalc(a,operation, b) << '\n';
+    else if ('/' ==b) {
+        std::cout « r(a, b, c) « '\n';
     }
-
     return 0;
 }
